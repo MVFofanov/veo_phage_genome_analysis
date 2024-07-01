@@ -137,6 +137,9 @@ squeue -u your_username
 ### 3. Check the Output
 The results of the analysis will be stored in the 'output_dir' directory specified in the config.yaml file
 
+### An example of a phage genome map as a result of this pipeline 
+![img.png](img.png)
+
 ## Detailed Explanation of the Pipeline
 ### Snakefile
 The Snakefile defines the workflow of the pipeline, specifying how input files are processed through various rules. Each rule corresponds to a different tool or analysis step:
