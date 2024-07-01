@@ -1,0 +1,16 @@
+# config.yaml
+working_dir: /home/zo49sog/crassvirales/veo_phages_natia
+log_directory: "{working_dir}/logs"
+
+input_dir: "{working_dir}/genomes"
+
+genomad_output_dir: "{working_dir}/genomad_taxonomy"
+checkv_output_dir: "{working_dir}/checkv_qc"
+pharokka_output_dir: "{working_dir}/pharokka_annotation"
+
+database_dir: /work/groups/VEO/databases
+genomad_database: "{database_dir}/geNomad/v1.3"
+checkv_database: "{database_dir}/checkv/v1.5"
+pharokka_database: "{database_dir}/pharokka/v1.7.1"
+
+slurm_output_dir: "{working_dir}/slurm_logs"
