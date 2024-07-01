@@ -85,3 +85,4 @@ rule pharokka:
         pharokka_plotter.py -i {input.genome} -n pharokka_plot -o {output.directory} -t "{wildcards.sample}" >> {log} 2>&1
         pharokka_multiplotter.py -g {output.directory}/pharokka.gbk -o {output.directory}/pharokka_plots -t "{wildcards.sample}" >> {log} 2>&1
         """
+

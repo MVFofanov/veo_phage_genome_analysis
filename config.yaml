@@ -1,9 +1,9 @@
 # config.yaml
 working_dir: /path/to/your/test/veo_phage_genome_analysis
-log_directory: "{working_dir}/logs"
 
 input_dir: "{working_dir}/genomes"
 output_dir: "{working_dir}/results"
+log_directory: "{working_dir}/logs"
 
 genomad_output_dir: "{output_dir}/genomad_taxonomy"
 checkv_output_dir: "{output_dir}/checkv_qc"
