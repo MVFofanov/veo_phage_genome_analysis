@@ -1,5 +1,5 @@
 # config.yaml
-working_dir: /home/zo49sog/crassvirales/veo_phages_natia
+working_dir: /home/zo49sog/crassvirales/veo_phage_genome_analysis
 log_directory: "{working_dir}/logs"
 
 input_dir: "{working_dir}/genomes"
