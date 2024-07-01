@@ -1,12 +1,13 @@
 # config.yaml
-working_dir: /home/zo49sog/crassvirales/veo_phage_genome_analysis
+working_dir: /path/to/your/test/veo_phage_genome_analysis
 log_directory: "{working_dir}/logs"
 
 input_dir: "{working_dir}/genomes"
+output_dir: "{working_dir}/results"
 
-genomad_output_dir: "{working_dir}/genomad_taxonomy"
-checkv_output_dir: "{working_dir}/checkv_qc"
-pharokka_output_dir: "{working_dir}/pharokka_annotation"
+genomad_output_dir: "{output_dir}/genomad_taxonomy"
+checkv_output_dir: "{output_dir}/checkv_qc"
+pharokka_output_dir: "{output_dir}/pharokka_annotation"
 
 database_dir: /work/groups/VEO/databases
 genomad_database: "{database_dir}/geNomad/v1.3"

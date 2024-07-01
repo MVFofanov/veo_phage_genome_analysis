@@ -12,9 +12,11 @@ with open("config.yaml") as file:
 working_dir = config["working_dir"]
 log_directory = config["log_directory"].format(working_dir=working_dir)
 input_dir = config["input_dir"].format(working_dir=working_dir)
-genomad_output_dir = config["genomad_output_dir"].format(working_dir=working_dir)
-checkv_output_dir = config["checkv_output_dir"].format(working_dir=working_dir)
-pharokka_output_dir = config["pharokka_output_dir"].format(working_dir=working_dir)
+output_dir = config["output_dir"].format(working_dir=working_dir)
+
+genomad_output_dir = config["genomad_output_dir"].format(output_dir=output_dir)
+checkv_output_dir = config["checkv_output_dir"].format(output_dir=output_dir)
+pharokka_output_dir = config["pharokka_output_dir"].format(output_dir=output_dir)
 
 database_dir = config["database_dir"]
 genomad_database = config["genomad_database"].format(database_dir=database_dir)

@@ -105,6 +105,7 @@ Change the working_dir path to your current project directory:
 
 ```
 working_dir: /path/to/your/test/veo_phage_genome_analysis
+output_dir: "{working_dir}/results"
 ```
 #### Edit submit_phage_genome_analysis.sh:
 Update the --output path in the SLURM directives:
@@ -134,7 +135,7 @@ You can monitor the job status using SLURM commands such as squeue:
 squeue -u your_username
 ```
 ### 3. Check the Output
-The results of the analysis will be stored in the directories specified in the config.yaml file, such as genomad_output_dir, checkv_output_dir, and pharokka_output_dir.
+The results of the analysis will be stored in the 'output_dir' directory specified in the config.yaml file
 
 ## Detailed Explanation of the Pipeline
 ### Snakefile
