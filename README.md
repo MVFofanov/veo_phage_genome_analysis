@@ -48,7 +48,7 @@ conda install -c conda-forge git
 With the Conda environment activated, install Snakemake:
 
 ```
-conda install -c bioconda -c conda-forge snakemake
+conda install -c bioconda -c conda-forge snakemake=7.32.4
 ```
 
 ## Setup
