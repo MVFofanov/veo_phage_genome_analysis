@@ -15,3 +15,5 @@ checkv_database: "{database_dir}/checkv/v1.5"
 pharokka_database: "{database_dir}/pharokka/v1.7.1"
 
 slurm_output_dir: "{working_dir}/slurm_logs"
+slurm_time: "3:00:00"
+slurm_partition: "short"
