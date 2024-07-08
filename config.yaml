@@ -1,19 +1,34 @@
 # config.yaml
-working_dir: /path/to/your/test/veo_phage_genome_analysis
 
+# Directories and Working Paths
+# Paths where input genomes, results, and logs will be stored
+working_dir: /path/to/your/test/veo_phage_genome_analysis
 input_dir: "{working_dir}/genomes"
 output_dir: "{working_dir}/results"
 log_directory: "{working_dir}/logs"
 
+# Output directories for various tools used in the analysis
 genomad_output_dir: "{output_dir}/genomad_taxonomy"
 checkv_output_dir: "{output_dir}/checkv_qc"
 pharokka_output_dir: "{output_dir}/pharokka_annotation"
 
+# Database Paths
+# Paths to the databases required for the analysis tools
 database_dir: /work/groups/VEO/databases
 genomad_database: "{database_dir}/geNomad/v1.3"
 checkv_database: "{database_dir}/checkv/v1.5"
 pharokka_database: "{database_dir}/pharokka/v1.7.1"
 
+# SLURM Configuration
+# SLURM-related settings for job scheduling and resource allocation
 slurm_output_dir: "{working_dir}/slurm_logs"
 slurm_time: "3:00:00"
 slurm_partition: "short"
+slurm_nodes: 1
+slurm_ntasks: 1
+
+# Snakemake Configuration
+# General Snakemake settings such as the number of parallel jobs
+jobs: 1000
+snakefile: "{working_dir}/Snakefile"
+latency_wait: 60
