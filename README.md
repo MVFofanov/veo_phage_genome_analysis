@@ -138,7 +138,7 @@ squeue -u your_username
 The results of the analysis will be stored in the 'output_dir' directory specified in the config.yaml file
 
 ### An example of a phage genome map as a result of this pipeline 
-![img.png](img.png)
+![Example Image](https://github.com/MVFofanov/veo_phage_genome_analysis/blob/main/images/example.png)
 
 ## Detailed Explanation of the Pipeline
 ### Snakefile
